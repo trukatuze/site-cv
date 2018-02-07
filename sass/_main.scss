@@ -1,3 +1,4 @@
+
 main{
   position: relative;
   display: block;
@@ -150,6 +151,15 @@ main{
   opacity: .5;
   position: relative;
   padding: 15px 0;
+  @include respond-to(tablets-landscape) {
+    width: 30%;
+  }
+  @include respond-to(tablets-portrait) {
+    width: 40%;
+  }
+  @include respond-to(phones-landscape) {
+    width: 215px;
+  }
   & :before{
     background: url(../icon/oil-branch-left-min.png) no-repeat center;
     background-size: 35px;
@@ -161,6 +171,12 @@ main{
     display: block;
     top: 5px;
     box-sizing: border-box;
+    @include respond-to(tablets-landscape) {
+      left: 35px;
+    }
+    @include respond-to(phones-landscape) {
+      left: 0;
+    }
   }
   & :after{
     background: url(../icon/oil-branch-right-min.png) no-repeat center;
@@ -173,6 +189,12 @@ main{
     display: block;
     top: 5px;
     box-sizing: border-box;
+    @include respond-to(tablets-landscape) {
+      right: 35px;
+    }
+    @include respond-to(phones-landscape) {
+      right: 0;
+    }
   }
 }
 .center{
@@ -190,6 +212,12 @@ main{
   position: relative;
   padding: 0;
   transition: all .5s ease;
+  @include respond-to(phones-landscape) {
+    width: 49%;
+  }
+  @include respond-to(phones) {
+    width: 100%;
+  }
 }
 .image-list{
   width: 100%;
@@ -230,8 +258,25 @@ li span{
     display: table;
   }
 }
+//eby4ka//
 .ebich{
   position: relative;
+}
+.info{
+  @include respond-to(tablets-portrait) {
+    opacity: 1;
+    position: relative;
+  }
+  @include respond-to(tablets-landscape) {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+  @include respond-to(phones-landscape) {
+    padding: 30px;
+  }
+  @include respond-to(phones) {
+    padding: 15px;
+  }
 }
 .info1{
   display: flex;
@@ -245,6 +290,11 @@ li span{
   flex-direction: column;
   justify-content: flex-start;
   padding: 70px;
+}
+.arrow-nav{
+  @include respond-to(tablets-portrait) {
+    display: none;
+  }
 }
 .arrow-right{
   width: 50px;
@@ -269,6 +319,15 @@ li span{
   color: #212121;
   margin: 60px 0 30px 0;
   font-size: 35px;
+  @include respond-to(desktops) {
+    margin-top: 60px;
+  }
+  @include respond-to(tablets-portrait) {
+    margin-top: 0;
+  }
+  @include respond-to(phones) {
+    text-align: center;
+  }
   &:after{
     content: '';
     width: 110px;
@@ -278,13 +337,15 @@ li span{
     bottom: -10px;
     box-sizing: border-box;
     display: flex;
-
   }
 }
 .item img{
   width: 100%;
   vertical-align: middle;
   border: 0;
+  @include respond-to(tablets-portrait) {
+    display: none;
+  }
 }
 .arrowp{
   text-align: right;
@@ -299,6 +360,9 @@ li span{
   height: 100%;
   right: 0;
   z-index: 7;
+  @include respond-to(tablets-portrait) {
+    display: none;
+  }
 }
 .row{
   margin: 0px;
