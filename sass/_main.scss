@@ -6,20 +6,12 @@ main{
 .padding-top-bottom{
   padding: 100px 0;
 }
-.block1{
-  position: relative;
-  @include section-line(true,#000);
-  @include section-line(false,#000);
-}
-.block2{
+.block1,.block2,.block3{
   position: relative;
   @include section-line(true,#000);
   @include section-line(false,#000);
 }
 .block3{
-  position: relative;
-  @include section-line(true,#000);
-  @include section-line(false,#000);
   .ebich{
     height: 444px;
     &>div{
