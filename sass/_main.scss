@@ -258,25 +258,9 @@ li span{
     display: table;
   }
 }
-//eby4ka//
+//lico//
 .ebich{
   position: relative;
-}
-.info{
-  @include respond-to(tablets-portrait) {
-    opacity: 1;
-    position: relative;
-  }
-  @include respond-to(tablets-landscape) {
-    padding-left: 90px;
-    padding-right: 90px;
-  }
-  @include respond-to(phones-landscape) {
-    padding: 30px;
-  }
-  @include respond-to(phones) {
-    padding: 15px;
-  }
 }
 .info1{
   display: flex;
@@ -290,6 +274,9 @@ li span{
   flex-direction: column;
   justify-content: flex-start;
   padding: 70px;
+  @include respond-to(tablets-portrait) {
+    display: none;
+  }
 }
 .arrow-nav{
   @include respond-to(tablets-portrait) {
