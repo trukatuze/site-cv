@@ -14,6 +14,9 @@ main{
 .block3{
   .ebich{
     height: 444px;
+    @include respond-to(tablets-portrait) {
+      height: auto;
+    }
     &>div{
       height: 100%;
       .item{
@@ -22,10 +25,17 @@ main{
         &>div,&>img{
           position: absolute;
           height: 100%;
+          @include respond-to(tablets-portrait) {
+            position: relative;
+            height: auto;
+          }
         }
         &>div{
           opacity: 0;
           z-index: 2;
+          @include respond-to(tablets-portrait) {
+            opacity: 1;
+          }
         }
       }
       .item.active{
@@ -126,7 +136,6 @@ main{
   font-family: Raleway,sans-serif;
   display: block;
   color: #040403;
-  text-align: center;
 }
 .info-down{
   font-family: Raleway,sans-serif;
@@ -259,16 +268,13 @@ li span{
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  padding: 70px;
+  padding: 78px;
 }
 .info2{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   padding: 70px;
-  @include respond-to(tablets-portrait) {
-    display: none;
-  }
 }
 .arrow-nav{
   @include respond-to(tablets-portrait) {
@@ -290,7 +296,7 @@ li span{
   border: 0;
   opacity: 3;
 }
-.tema{
+.tema1{
   position: relative;
   text-transform: uppercase;
   font-family: Raleway,sans-serif;
@@ -316,6 +322,36 @@ li span{
     bottom: -10px;
     box-sizing: border-box;
     display: flex;
+    margin: 0 0 0 90px;
+  }
+}
+.tema2{
+  position: relative;
+  text-transform: uppercase;
+  font-family: Raleway,sans-serif;
+  font-weight: 900;
+  color: #212121;
+  margin: 60px 0 30px 0;
+  font-size: 35px;
+  @include respond-to(desktops) {
+    margin-top: 60px;
+  }
+  @include respond-to(tablets-portrait) {
+    margin-top: 0;
+  }
+  @include respond-to(phones) {
+    text-align: center;
+  }
+  &:after{
+    content: '';
+    width: 110px;
+    height: 2px;
+    background: #040403;
+    position: absolute;
+    bottom: -10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
   }
 }
 .item img{
@@ -327,7 +363,6 @@ li span{
   }
 }
 .arrowp{
-  text-align: right;
   margin: 0;
   font-family: Raleway,sans-serif;
   color: #040403;
@@ -345,4 +380,9 @@ li span{
 }
 .row{
   margin: 0px;
+}
+.has-label{
+  .form-control{
+    border-color: green !important;
+  }
 }
