@@ -14,7 +14,6 @@ $(document).ready(function(){
         parent.find('.white-block').addClass('push-right');
     })
 
-
     $('.start').on('click', (function (e) {
             e.preventDefault();
             var target = $(this.hash);
@@ -31,13 +30,23 @@ $(document).ready(function(){
     $('#ss-form .form-control').focus(function () {
         $(this).parents('.form-group').addClass('has-label');
     }).blur(function () {
-        if ($(this).val() == '') {
+        if ($(this).val() === '') {
             $(this).parents('.form-group').removeClass('has-label');
         }else{
             alert('adfafwhd')
         }
     });
+//Study//
+    $('.buttone').click(function(){
+        event.preventDefault();
+        console.log($('.quantity').val())
+    })
 
+    $('.buttones').click(function(){
+        event.preventDefault();
+        var selectValue = $('select').val();
+        $('body').css('background',selectValue);
+    })
 
     // $(window).scroll(function () {
     //     var scrollValue = $(window).scrollTop();
