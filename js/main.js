@@ -23,9 +23,7 @@ $(document).ready(function(){
             return false
     }));
 
-
     new WOW().init();
-
 
     $('#ss-form .form-control').focus(function () {
         $(this).parents('.form-group').addClass('has-label');
@@ -33,34 +31,27 @@ $(document).ready(function(){
         if ($(this).val() === '') {
             $(this).parents('.form-group').removeClass('has-label');
         }else{
-            alert('adfafwhd')
+            alert('eror')
         }
     });
+
+    // Scroll in console
+    $(window).scroll(function () {
+        var scrollValue = $(window).scrollTop();
+
+        var geneneralHeight = $(window).height();
+        var positionProperty = scrollValue / geneneralHeight * 100;
+        console.log(positionProperty);
+    })
 //Study//
-    $('.buttone').click(function(){
-        event.preventDefault();
-        console.log($('.quantity').val())
-    })
-
-    $('.buttones').click(function(){
-        event.preventDefault();
-        var selectValue = $('select').val();
-        $('body').css('background',selectValue);
-    })
-
-    // $(window).scroll(function () {
-    //     var scrollValue = $(window).scrollTop();
-    //
-    //     var geneneralHeight = $(window).height();
-    //     var positionProperty = scrollValue / geneneralHeight * 100;
-    //     console.log(positionProperty);
-    // })
+//     $('.buttone').click(function(){
+//         event.preventDefault();
+//         console.log($('.quantity').val())
+//     })
+//
+//     $('.buttones').click(function(){
+//         event.preventDefault();
+//         var selectValue = $('select').val();
+//         $('body').css('background',selectValue);
+//     })
 });
-//jquery animate()
-//jquery and js scrollTop+offsets
-//parent()
-//input events
-// Вивчити if else и оператори
-//1)Створити инпут и кнопку,ввести в инпут тильки число и приклици на кнопку значення цього инпуту вивести в консольку
-//2)Створити select або інпут з назвами кольрів або якшо ввести в інпут якийсь колір при кліці на кнопку
-// змінити body background

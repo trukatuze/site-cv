@@ -14,35 +14,61 @@ footer {
       font-size: 12px;
       position: relative;
       top: 5px;
-      font-family: Raleway, sans-serif;
+      font-family: Raleway,sans-serif;
       color: #fff;
       @include respond-to(tablets-portrait) {
         text-align: center;
+        width: 100%;
+        display: block;
       }
     }
-    .social-network-list{
-      margin: 0;
-      @include respond-to(tablets-portrait) {
-        margin-top: 20px !important;
+    .image-list {
+      width: 100%;
+      display: block;
+      li {
+        display: inline-block;
+        text-align: center;
+        img, p, span {
+          width: 100%;
+          display: block;
+        }
       }
-      li{
-        opacity: .5;
-        transition: all .5s ease;
-        .facebook {
-          background: url(../icon/facebook-min.png) no-repeat center;
+    }
+    .socialn {
+      margin: 0;
+      text-align: right;
+      line-height: 0;
+      @include respond-to(tablets-portrait) {
+        text-align: center;
+        margin-top: 15px;
+      }
+      li {
+        opacity: 0.5;
+        transition: $transition;
+        &:hover {
+          opacity: 1;
         }
-        .instagram {
-          background: url(../icon/instagram-min.png) no-repeat center;
-        }
-        .linkedin {
-          background: url(../icon/linkedin-min.png) no-repeat center;
-        }
-        a{
+        a {
           text-decoration: none;
           width: 60px;
           height: 30px;
           display: block;
         }
+      }
+      .facebook {
+        background: url(../icon/facebook-min.png) no-repeat center;
+      }
+      .instagram {
+        background: url(../icon/instagram-min.png) no-repeat center;
+      }
+      .linkedin {
+        background: url(../icon/linkedin-min.png) no-repeat center;
+      }
+      a {
+        text-decoration: none;
+        width: 60px;
+        height: 30px;
+        display: block;
       }
     }
   }
@@ -81,11 +107,11 @@ footer {
     text-transform: uppercase;
     font-family: Raleway,sans-serif;
     font-weight: 900;
-    font-size: 55px;
+    font-size: 75px;
     margin: 100px 0 100px 0;
   }
   address{
-    margin-bottom: 20px;
+    margin: 35px 0 0 0;
     font-style: normal;
     line-height: 1.42857;
     box-sizing: border-box;

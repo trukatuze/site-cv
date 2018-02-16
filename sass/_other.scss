@@ -4,3 +4,18 @@
 a{
   text-decoration: none !important;
 }
+ul{
+  margin-left: 0;
+  padding-left: 0;
+}
+li{
+  margin-left: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+p {
+  font-weight: 400;
+}
+.nav li a{
+  padding: 0 !important;
+}
