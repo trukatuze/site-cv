@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d6739e1d-1d27-466b-a5cc-251babb4ceb3" name="Default" comment="new commit remove node_modules">
+    <list default="true" id="d6739e1d-1d27-466b-a5cc-251babb4ceb3" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change beforePath="$PROJECT_DIR$/sass/_footer.scss" afterPath="$PROJECT_DIR$/sass/_footer.scss" />
-      <change beforePath="$PROJECT_DIR$/sass/_header.scss" afterPath="$PROJECT_DIR$/sass/_header.scss" />
-      <change beforePath="$PROJECT_DIR$/sass/_main.scss" afterPath="$PROJECT_DIR$/sass/_main.scss" />
-      <change beforePath="$PROJECT_DIR$/sass/_other.scss" afterPath="$PROJECT_DIR$/sass/_other.scss" />
-      <change beforePath="$PROJECT_DIR$/sass/_study.scss" afterPath="$PROJECT_DIR$/sass/_study.scss" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -256,7 +248,7 @@
       <workItem from="1518691629255" duration="563000" />
       <workItem from="1518692277167" duration="6002000" />
       <workItem from="1518715243978" duration="2581000" />
-      <workItem from="1518784772585" duration="11026000" />
+      <workItem from="1518784772585" duration="11053000" />
     </task>
     <task id="LOCAL-00001" summary="new commit 7 february">
       <created>1518012442191</created>
@@ -307,11 +299,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518717757629</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="new commit remove node_modules">
+      <created>1518796125850</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1518796125850</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86655000" />
+    <option name="totallyTimeSpent" value="86682000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1535" height="904" extended-state="6" />
