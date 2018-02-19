@@ -28,30 +28,8 @@ $(document).ready(function(){
     $('#ss-form .form-control').focus(function () {
         $(this).parents('.form-group').addClass('has-label');
     }).blur(function () {
-        if ($(this).val() === '') {
+        if ($(this).val() == '') {
             $(this).parents('.form-group').removeClass('has-label');
-        }else{
-            alert('eror')
         }
     });
-
-    // Scroll in console
-    $(window).scroll(function () {
-        var scrollValue = $(window).scrollTop();
-
-        var geneneralHeight = $(window).height();
-        var positionProperty = scrollValue / geneneralHeight * 100;
-        console.log(positionProperty);
-    })
-//Study//
-//     $('.buttone').click(function(){
-//         event.preventDefault();
-//         console.log($('.quantity').val())
-//     })
-//
-//     $('.buttones').click(function(){
-//         event.preventDefault();
-//         var selectValue = $('select').val();
-//         $('body').css('background',selectValue);
-//     })
 });
