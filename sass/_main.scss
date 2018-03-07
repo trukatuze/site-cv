@@ -109,6 +109,10 @@ main{
   padding: 15px 5px;
   position: fixed;
 }
+.affix {
+  transition: all .5s ease-in-out;
+  position: fixed!important;
+}
 .item1{
   text-transform: uppercase;
   font-family: Raleway,sans-serif;
