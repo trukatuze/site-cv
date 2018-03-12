@@ -6,7 +6,7 @@ main{
 .padding-top-bottom{
   padding: 100px 0;
 }
-.block1,.block2,.block3,.block4{
+.block1,.block2,.block3,.block4,.block5{
   position: relative;
   @include section-line(true,#000);
   @include section-line(false,#000);
