@@ -34,16 +34,17 @@ $(document).ready(function(){
     });
 
     //menu btn toggle
+    
     var btnToggle = $('#toggle-btn');
-    // var overlay = $('.overlay-background');
+    var overlay = $('.overlay-background');
     var nav = $('#navbar');
 
     btnToggle.affix({offset: {top: $("header").outerHeight(true)}});
     btnToggle.click(function () {
         if (btnToggle.hasClass('affix') != false) {
-            nav.toggleClass("navToggle");
+            nav.toggleClass(".navToggle");
         }else{
-            nav.removeClass('navToggle');
+            nav.removeClass(".navToggle");
         }
     });
     $(window).scroll(function () {
