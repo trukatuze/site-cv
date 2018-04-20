@@ -112,37 +112,38 @@ main{
     background:url(../icon/btn-toggle-light-min.png) center #040403 no-repeat;
     background-size:25px;
   }
-  .navToggle {
-    position: fixed;
-    width: 145px;
-    z-index: 2!important;
-    top: 30px;
-    padding: 5px;
-    left: 90px;
-    background: #fff
-  }
 
-  header .navToggle ul .active {
-    background: 0 0
-  }
+}
+.navToggle {
+  position: fixed;
+  width: 145px;
+  z-index: 2!important;
+  top: 30px;
+  padding: 5px;
+  left: 90px;
+  background: #fff
+}
 
-  header .navToggle ul .active a:before {
-    transition: all .5s ease;
-    width: 100%!important
-  }
+header .navToggle ul .active {
+  background: 0 0
+}
 
-  header .navToggle ul li {
-    float: left!important
-  }
+header .navToggle ul .active a:before {
+  transition: all .5s ease;
+  width: 100%!important
+}
 
-  header .navToggle ul li a {
-    color: #040403!important;
-    float: left
-  }
+header .navToggle ul li {
+  float: left!important
+}
 
-  header .navToggle ul li a:before {
-    background: #040403!important
-  }
+header .navToggle ul li a {
+  color: #040403!important;
+  float: left
+}
+
+header .navToggle ul li a:before {
+  background: #040403!important
 }
 .affix {
   transition: all .5s ease-in-out;

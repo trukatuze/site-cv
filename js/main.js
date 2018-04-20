@@ -35,23 +35,21 @@ $(document).ready(function(){
 
     //menu btn toggle
     
-    // var btnToggle = $('#toggle-btn');
-    // var overlay = $('.overlay-background');
-    // var nav = $('#navbar');
-    //
+    var btnToggle = $('#toggle-btn');
+    var overlay = $('.overlay-background');
+    var nav = $('#navbar');
+
     // btnToggle.affix({offset: {top: $("header").outerHeight(true)}});
-    // btnToggle.click(function () {
-    //     if (btnToggle.hasClass('affix') != false) {
-    //         nav.toggleClass(".navToggle");
-    //     }else{
-    //         nav.removeClass(".navToggle");
-    //     }
-    // });
-    // $(window).scroll(function () {
-    //     if (btnToggle.hasClass('affix') != true) {
-    //         nav.removeClass('navToggle');
-    //     }
-    // });
+    btnToggle.click(function () {
+        if (btnToggle.hasClass('affix')) {
+            nav.toggleClass("navToggle");
+        }
+    });
+    $(window).scroll(function () {
+        if (btnToggle.hasClass('affix') != true) {
+            nav.removeClass('navToggle');
+        }
+    });
 
     // Instantiate the map
     Highcharts.mapChart('maper', {
