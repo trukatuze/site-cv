@@ -19,3 +19,7 @@ p {
 .nav li a{
   padding: 0 !important;
 }
+.nav>li>a:hover {
+  background-color:green !important;
+  width: 130px;
+}
